@@ -109,3 +109,48 @@ array8.forEach(elem => {
 });
 
 console.log(evenThree)
+
+//Дано натуральне число. Знайти та вивести на сторінку всі його дільники. 
+//Визначити кількість його парних дільників.
+
+let naturalNum = prompt('Введіть число');
+
+let count = [];
+
+let evenNaturalNum = [];
+
+for (let i = 1; i <= naturalNum; i++) {
+    if (naturalNum % i == 0) {
+        count.push(i) 
+    }
+
+    if (naturalNum % i == 0 && i % 2 == 0) {
+        evenNaturalNum.push(i) 
+    }
+}   
+
+alert(`Дільники натурального даного числа ${naturalNum}: ${count}`);
+
+alert(`Парні дільники числа ${naturalNum}: ${evenNaturalNum}`);
+
+//Знайти суму його парних дільників.
+
+let sumEvenNaturalNum = 0;
+
+evenNaturalNum.forEach(
+    (elem) => {
+        sumEvenNaturalNum += Number(elem)
+    }
+);
+console.log(sumEvenNaturalNum);
+
+//Надрукувати повну таблицю множення від 1 до 10.
+let multTable = [];
+
+for (let i = 0; i <= 10; i++) {
+    multTable.push([])
+  
+    for (let j = 0; j <= 10; j++) {
+      multTable[i].push(i*j)
+  }
+}
