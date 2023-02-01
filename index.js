@@ -49,7 +49,7 @@ let multArray5 = 1;
 
 for (let i = 15; i <= 35; i++) {
     array5.push(i)
-} 
+};
 
 array5.forEach(
     (elem) => {
@@ -72,7 +72,7 @@ for (i = 1; i <= 500; i++) {
     sumarray6 += array6[i]
 };
 
-console.log(average = sumarray6 / array6.length)
+console.log(average = sumarray6 / array6.length);
 
 //Вивести суму лише парних чисел в діапазоні від 30 до 80.
 
@@ -82,15 +82,13 @@ let even = [];
 
 for (i = 30; i <= 80; i++) {
     array7.push(i)
-} 
+};
 
 array7.forEach(elem => {
     if (elem % 2 == 0) {
-        even.push(elem)
+        console.log(even.push(elem))
     }
 });
-
-console.log(even)
 
 //Вивести всі числа в діапазоні від 100 до 200 кратні 3.
 
@@ -104,11 +102,9 @@ for (i = 100; i <= 200; i++) {
 
 array8.forEach(elem => {
     if (elem % 3 == 0) {
-        evenThree.push(elem)
+        console.log(evenThree.push(elem))
     }
 });
-
-console.log(evenThree)
 
 //Дано натуральне число. Знайти та вивести на сторінку всі його дільники. 
 //Визначити кількість його парних дільників.
@@ -121,11 +117,11 @@ let evenNaturalNum = [];
 
 for (let i = 1; i <= naturalNum; i++) {
     if (naturalNum % i == 0) {
-        count.push(i) 
+        console.log(count.push(i))  
     }
 
     if (naturalNum % i == 0 && i % 2 == 0) {
-        evenNaturalNum.push(i) 
+        console.log(evenNaturalNum.push(i)) 
     }
 }   
 
@@ -147,10 +143,10 @@ console.log(sumEvenNaturalNum);
 //Надрукувати повну таблицю множення від 1 до 10.
 let multTable = [];
 
-for (let i = 0; i <= 10; i++) {
+for (let i = 1; i <= 10; i++) {
     multTable.push([])
   
-    for (let j = 0; j <= 10; j++) {
-      multTable[i].push(i*j)
+    for (let j = 1; j <= 10; j++) {
+      multTable.push(i*j)
   }
 }
