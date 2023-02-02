@@ -5,7 +5,7 @@ for (let i = 10; i <= 20; i++) {
     array1.push(i)
 };
 
-console.log(array1);
+alert(array1.join(', '));
 
 //Вивести квадрати чисел від 10 до 20.
 
@@ -141,12 +141,16 @@ evenNaturalNum.forEach(
 console.log(sumEvenNaturalNum);
 
 //Надрукувати повну таблицю множення від 1 до 10.
-let multTable = [];
+let oneRow = '';
+function multiply() {
+	for (let i = 1; i <= 10; i++) {
+		for (var j = 1; j <= 10; j++) {
+			oneRow  += (j*i) + " ";       
+		}
+    console.log(oneRow);
+		oneRow = '';
+	} 
 
-for (let i = 1; i <= 10; i++) {
-    multTable.push([])
-  
-    for (let j = 1; j <= 10; j++) {
-      multTable.push(i*j)
-  }
 }
+
+multiply(); 
